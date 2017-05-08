@@ -22,7 +22,7 @@ h6 {
 }
 /*top background*/
 .intro-header { 
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px; 
     padding-bottom: 50px;
     text-align: center;
     background: url("http://megapixelstock.com/user/userinfo/user_images/coding.jpg") no-repeat center center fixed;
@@ -51,7 +51,20 @@ h6 {
 /*small header*/
 .intro-message > h3 {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-    color: #b3b3b3;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.icons a i {
+  margin: 0 10px 0 10px;
+  font-size: 60px;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.75;
+}
+
+.icons a i:hover {
+  opacity: 1;
 }
 
 @media(max-width:767px) {
@@ -81,7 +94,7 @@ h6 {
 hr.intro-divider {
   border: 1px outset rgba(255, 255, 255, 0.2);
   box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-  width: 100%;
+  width: 70%;
 }
 /* social buttons */
 .btn {
@@ -166,13 +179,13 @@ h2.section-heading {
 /* Portfolio section*/
 section {
   color: black;
-  background: url('https://68.media.tumblr.com/d3fd545cd977a174beef12c1106880bf/tumblr_nt505iKkul1ud7rr3o1_1280.jpg') no-repeat center center fixed;
+  background: url("https://i.ytimg.com/vi/d-zKJCKsoWw/maxresdefault.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 855px;
 }
 
  #below-section {
-  color: #000;
+  color: #ffffff;
 }
 
 #small-text {
