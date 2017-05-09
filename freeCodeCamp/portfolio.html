@@ -32,7 +32,7 @@
             </div>
         </div>
     </nav>
-
+<!-- Home section -->
     <a name="home"></a>
     <div class="intro-header">
         <div class="container">
@@ -54,39 +54,58 @@
             </div>
         </div>
     </div>
-
- <!-- Page Content -->
-
-	<a  name="about"></a>
+    <!-- End of Home section -->   
+    <!-- About section -->
+    <a name="about"></a>
     <div class="content-section-a">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">                
-                    <div class="clearfix"></div>
-                        <h2 class="section-heading">James Ingram</h2>
-                        </br>
-                        <p class="lead">I'm a <a class="link" target="_blank" href="http://www.freecodecamp.com/jamesingram2">self taught</a> web designer and developer based in the Southern Tier of New York State.<br/><br/>
-                        My passion is to use technology based solutions in order to help solve real world challenges.<br/><br/>
-                        Languages and Frameworks:</br>
-                        HTML5, CSS3, JavaScript, jQuery, Bootstrap3, Angular.js, Meteor.js.</br>
-                        </p>
-                    </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
-                        <img class="img-circle img-responsive" src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/13782156_10208147213617094_1142437497951036180_n.jpg?oh=c2d60fdb1edfa12f0fa7d0ac3d8a040c&oe=597D181A" alt="James Ingram">
-                    </div>
+                <div class="col-lg-6 col-sm-6">                
+                    <h2 class="section-heading">James Ingram</h2>
+                    </br>
+                    <p class="lead">I'm a <a class="link" target="_blank" href="http://www.freecodecamp.com/jamesingram2">self taught</a> web designer and developer based in the Southern Tier of New York State.<br/><br/>
+                    My passion is to use technology-based solutions in order to help solve real world challenges.<br/><br/>
+                    Languages and Frameworks:</br>
+                    HTML5, CSS3, JavaScript, jQuery, Bootstrap3, Angular.js, Meteor.js.</br>
+                    </p>   
+                </div>
+                <div class="col-lg-6 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
+                    <img class="img-circle img-responsive" src="imgs/profilePic.jpg" alt="James Ingram">
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="container-fluid" id="skills">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 text-center">
+                    <i class="fa fa-4x fa-html5" aria-hidden="true"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="col-lg-2 col-sm-6 text-center">
+                    <i class="fa fa-4x fa-css3" aria-hidden="true"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="col-lg-2 col-sm-6 text-center">
+                    <i class="fa fa-4x fa-code" aria-hidden="true"></i>
+                    <h3>JavaScript</h3>
+                    <h3>jQuery</h3>
+                </div>
+                <div class="col-lg-2 col-sm-6 text-center">
+                    <i class="fa fa-4x fa-bold" aria-hidden="true"></i>
+                    <h3>Bootstrap<h3>
                 </div>
             </div>
         </div>
     </div>
-  
-     <!-- Portfolio Grid Section -->
+    <!-- End of about section -->
+    <!-- Portfolio Grid Section -->
    <a  name="portfolio"></a>
     <section id="portfolio" class="bg-light-gray bounds">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Design Projects</h2>
-                    <h3 id="below-section" class="section-subheading text-muted">Below you'll find some of my recent work.</h3>
+                    <h3 id="below-section" class="section-subheading text-muted">Below you will soon find some examples of my work.</h3>
                 </div>
             </div>
           <!-- Portfolio img1 -->
@@ -98,7 +117,7 @@
                                 <i class="fa fa-fire fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://www.boxertechnology.info/wp-content/uploads/2013/01/Blank-monitor-of-your-PC.jpg" class="img-responsive" alt="">
+                        <img src="imgs/project.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Project Number One</h4>
@@ -115,7 +134,7 @@
                                 <i class="fa fa-fire fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://www.boxertechnology.info/wp-content/uploads/2013/01/Blank-monitor-of-your-PC.jpg" class="img-responsive" alt="">
+                        <img src="imgs/project.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Project Number Two</h4>
@@ -132,7 +151,7 @@
                                 <i class="fa fa-fire fa-3x"></i>
                             </div>
                         </div>
-                        <img src="http://www.boxertechnology.info/wp-content/uploads/2013/01/Blank-monitor-of-your-PC.jpg" class="img-responsive" alt="">
+                        <img src="imgs/project.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Project Number Three</h4>
@@ -143,18 +162,31 @@
             </div>
         </div>
     </section>
-
+    <!-- End of Portfolio section -->
+    <!-- Contact section -->
 	<a  name="contact"></a>
     <div class="banner">
       <div class="bg-overlay4">
         <div class="container">         
             <div class="row">
-                <div class="col-lg-6">
-                  <h2 class="connect">Contact us or find us online</h2>
+                <h2>Contact us</h2>
+                <div class="col-lg-4">
+                    <form id="contactForm">
+                        <label>Name: <br>
+                        <input type="text" id="name" name="name" required></label><br/>
+                        <label>Email: <br>
+                        <input type="email" name="email" placeholder="me@me.com" required></label></br>
+                        <label>Phone: <br>
+                        <input type="number" name="phone" placeholder="###-###-####"></label></br>
+                        Preferred Contact Method:<br/>
+                        <label><input type="radio" name="contact" value="email">Email</label>
+                        <label><input type="radio" name="contact" value="phone">Phone</label><br/>
+                        <label>Message: <br>
+                        <textarea name="comment" form="contactForm" placeholder="Enter message here..." required></textarea><br><br>
+                        <input type="submit" value="submit">
+                    </form>
                 </div>
-              </br>
-      
-                <div class="col-lg-6">
+                <div class="col-lg-8" align="right">
                     <ul class="list-inline banner-social-buttons">
                         <li><a href="https://github.com/jamesingram2" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a></li>
                         <li><a href="https://www.linkedin.com/in/jamesingram13790" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i><span class="network-name">Linkedin</span></a></li>
@@ -164,36 +196,27 @@
                         <li><a href="http://www.freecodecamp.com/jamesingram2" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-free-code-camp fa-fw"></i><span class="network-name"> freeCodeCamp</span></a></li>
                     </ul>
                 </div>
+                </div>
+                <!-- /.container -->
+            </div>
         </div>
-        <!-- /.container -->
     </div>
-</div>
-</div>
-</div>
+    </div>
     <!-- /.banner -->
 
     <!-- Footer -->
     <footer>
-    
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
+                        <li><a href="#">Home</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
+                        <li><a href="#about">About</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <p class="copyright text-muted small">Copyright &copy; Ingram Web Design 2017 - All Rights Reserved</p>
                 </div>
